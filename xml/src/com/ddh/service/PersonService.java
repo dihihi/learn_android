@@ -51,6 +51,7 @@ public class PersonService {
 				break;
 			}
 		}
+		xml.close();
 		return persons;
 	}
 }
