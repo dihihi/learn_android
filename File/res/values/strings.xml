@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">文件操作</string>
+    <string name="filenameTip">文件名</string>
+    <string name="contentTip">输入文件内容</string>
+    <string name="success">保存成功</string>
+    <string name="fail">保存失败</string>
+    <string name="save">保存</string>
+    
+
+</resources>

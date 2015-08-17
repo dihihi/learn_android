@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">发短信</string>
+    <string name="phoneTip">请输入手机号:</string>
+    <string name="contentTip">请输入短信内容:</string>
+    <string name="sendBtn">发送短信</string>
+    <string name="successTip">发送短信成功!</string>
+
+</resources>
