@@ -5,9 +5,9 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="21" />
-    <instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.ddh.xml"></instrumentation>
+    <instrumentation android:targetPackage="com.ddh.xml" android:name="android.test.InstrumentationTestRunner"></instrumentation>
 
     <application
         android:allowBackup="true"

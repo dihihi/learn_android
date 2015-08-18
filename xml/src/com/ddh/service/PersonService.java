@@ -12,10 +12,10 @@ import com.ddh.domain.Person;
 
 public class PersonService {
 
-	public static List<Person> getPersons(InputStream xml)throws Exception {
+	public static List<Person> getPersons(InputStream xml) throws Exception {
 		List<Person> persons = null;
 		Person person = null;
-		
+
 		XmlPullParser parser = Xml.newPullParser();
 		parser.setInput(xml, "UTF-8");
 		int event = parser.getEventType();
@@ -24,7 +24,7 @@ public class PersonService {
 			case XmlPullParser.START_DOCUMENT:
 				persons = new ArrayList<Person>();
 				break;
-			
+
 			case XmlPullParser.START_TAG:
 				if ("person".equals(parser.getName())) {
 					String id = parser.getAttributeValue(0);
@@ -40,16 +40,17 @@ public class PersonService {
 					person.setAge(age);
 				}
 				break;
-				
+
 			case XmlPullParser.END_TAG:
 				if ("person".equals(parser.getName())) {
 					persons.add(person);
 				}
 				break;
-				
+
 			default:
 				break;
 			}
+			event = parser.next();
 		}
 		xml.close();
 		return persons;
